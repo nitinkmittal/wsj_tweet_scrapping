@@ -27,3 +27,10 @@ This README would normally document whatever steps are necessary to get your app
 
 * Repo owner or admin
 * Other community or team contact
+
+### To use tqdm progress bar ###
+* install jupyter lab extension using ```bash jupyter labextension install @jupyter-widgets/jupyterlab-manager ```
+
+### To install jupyter lab extension for widgets
+
+
