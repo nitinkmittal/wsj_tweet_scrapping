@@ -1,0 +1,21 @@
+name: wsj_tweet_scrapping
+channels:
+  - conda-forge
+dependencies:
+  - ipykernel
+  - openpyxl
+  - nodejs
+  - numpy
+  - pandas
+  - pip
+  - python
+  - tqdm
+  - pip:
+      - glob3
+      - pickle-mixin
+      - twitterscraper
+      - nest_asyncio
+      - lxml
+      - xlrd
+      - urllib3
+      - beautifulsoup4
