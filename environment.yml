@@ -4,6 +4,7 @@ channels:
 dependencies:
   - ipykernel
   - openpyxl
+  - nltk
   - nodejs
   - numpy
   - pandas
@@ -13,9 +14,9 @@ dependencies:
   - pip:
       - glob3
       - pickle-mixin
-      - twitterscraper
       - nest_asyncio
       - lxml
       - xlrd
       - urllib3
       - beautifulsoup4
+      - spacy

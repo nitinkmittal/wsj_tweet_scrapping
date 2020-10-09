@@ -31,6 +31,5 @@ This README would normally document whatever steps are necessary to get your app
 ### To use tqdm progress bar ###
 * install jupyter lab extension using ```bash jupyter labextension install @jupyter-widgets/jupyterlab-manager ```
 
-### To install jupyter lab extension for widgets
-
-
+### To install en_core_web_sm
+* ```bash python -m spacy download en_core_web_sm ```
