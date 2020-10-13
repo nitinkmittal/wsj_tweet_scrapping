@@ -6,8 +6,6 @@ dependencies:
   - openpyxl
   - nltk
   - nodejs
-  - numpy
-  - pandas
   - pip
   - python
   - tqdm
