@@ -6,15 +6,23 @@ import re
 def get_stopwords(lang : str = "english"):
     return stopwords.words(lang)
 
-def find_urls_in_text(text : str): 
+def find_urls_in_text(text : str) -> List: 
   
     # findall() has been used  
     # with valid conditions for urls in string 
     regex = (r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)"
              "(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()"
              "<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))")
-    url = re.findall(regex, text)       
-    return [x[0] for x in url] 
+    url = re.findall(regex, text)
+    
+    # x[0] because different types of urls will be caught and non-empty type url be at index 0 for every url type caught
+    # ex. [('https://www.wsj.com/articles/todays-top-supply-chain-and-logistics-news-from-wsj-1462876696',
+    #       '',
+    #       '',
+    #       '',
+    #       ''),
+    #      ('http://on.wsj.com/Logisticsnewsletter', '', '', '', '')]
+    return [x[0] for x in url]
 
 
 def get_words_contractions() -> Dict:
