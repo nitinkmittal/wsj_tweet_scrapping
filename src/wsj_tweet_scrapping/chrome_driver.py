@@ -4,25 +4,25 @@ from selenium.webdriver.chrome.webdriver import WebDriver
 from bs4 import BeautifulSoup
 
 
-def open_driver():
+def open_driver(executable_driver_path: str):
     """
     Open and return driver.
     
-    Note : Path tp Microsoft Edge driver should be set correctly.
+    Note : Path to chrome driver should be set correctly.
     """
-    driver_path = r"C:\Users\user\Downloads\Softwares\chromedriver_win32\chromedriver.exe"
-    return webdriver.Chrome(driver_path)
+    executable_driver_path = r"C:\\Users\\user\\Downloads\\Softwares\\chromedriver_win32\\chromedriver.exe"
+    return webdriver.Chrome(executable_driver_path)
 
 
-def load_url(driver : WebDriver,
+def load_url(driver: WebDriver,
              url : str,
-             verbose : int = 0):
+             verbose : bool: False):
     """
     Load URL using driver.
     
     Parameters
     ----------
-    driver : selenium.edge.webdriver.
+    driver : selenium.chrome.webdriver.
     
     url : str.
     

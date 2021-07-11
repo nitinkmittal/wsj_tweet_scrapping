@@ -2,19 +2,23 @@ name: wsj_tweet_scrapping
 channels:
   - conda-forge
 dependencies:
+  - black
+  - flake8
   - ipykernel
+  - isort
+  - jupyterlab
   - openpyxl
   - nltk
   - nodejs
   - pip
   - python
+  - pycodestyle
+  - pydocstyle
   - selenium
   - tqdm
   - pip:
-      - glob3
       - pickle-mixin
       - nltk
-      - nest_asyncio
       - lxml
       - xlrd
       - urllib3
